@@ -1,0 +1,17 @@
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\Orc and Melanoma.exe.config
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\Orc and Melanoma.exe
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\Orc and Melanoma.pdb
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.dll
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Imaging.dll
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Math.dll
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Vision.dll
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.xml
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Imaging.xml
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Math.xml
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\bin\Debug\AForge.Vision.xml
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc_and_Melanoma.viewPrincipal.resources
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc_and_Melanoma.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.exe
+C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.pdb
