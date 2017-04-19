@@ -15,3 +15,6 @@ C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc
 C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.csproj.GenerateResource.Cache
 C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.exe
 C:\Users\Carlos\Documents\GitHub\Orc and Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.pdb
+C:\Users\Carlos\Documents\GitHub\Orc-and-Melanoma\Orc and Melanoma\bin\Debug\Orc and Melanoma.exe.config
+C:\Users\Carlos\Documents\GitHub\Orc-and-Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.exe
+C:\Users\Carlos\Documents\GitHub\Orc-and-Melanoma\Orc and Melanoma\obj\Debug\Orc and Melanoma.pdb
