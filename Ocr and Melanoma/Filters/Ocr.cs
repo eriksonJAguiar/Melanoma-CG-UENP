@@ -51,7 +51,7 @@ namespace Filters
             Erosion3x3 e = new Erosion3x3();
             var binary = e.Apply(imagem);
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 11; i++)
             {
                 binary = e.Apply(binary);
             }
@@ -73,19 +73,18 @@ namespace Filters
             return binary;
         }
 
-        public int contagem(Bitmap img)
+        public string contagem(Bitmap img)
         {
             Bitmap imagem = (Bitmap)img.Clone();
 
-
-            BlobCounter bb = new BlobCounter();
-
-            bb.ProcessImage(img);
+            BlobCounter bc = new BlobCounter();
+            // process binary image
+            bc.ProcessImage(img);
+            Rectangle[] rects = bc.GetObjectsRectangles();
+            // process blobs
+            string c =  bc.ObjectsCount.ToString() ;
             
-            int x = bb.ObjectsCount; 
-            //colocar funlção de contagem de blocos
-
-            return x;
+            return c;
         }
 
     }
