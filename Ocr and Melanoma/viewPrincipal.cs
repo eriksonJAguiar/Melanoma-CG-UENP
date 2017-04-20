@@ -1,4 +1,5 @@
-﻿using Filters;
+﻿using AForge.Imaging;
+using Filters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +30,7 @@ namespace Orc_and_Melanoma
                 return;
             }
             var fn = openFileDialog.FileName;
-            var img = Image.FromFile(fn);
+            var img = AForge.Imaging.Image.FromFile(fn);
             pictureBox.Image = img;
             pictureBox.Refresh();
         }

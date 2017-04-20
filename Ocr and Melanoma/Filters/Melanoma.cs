@@ -16,7 +16,7 @@ namespace Filters
         {
             Bitmap imagem = (Bitmap)img.Clone();
 
-            //var img1 = hslFiltering(imagem);
+ 
             var img2 = grayScale(imagem);
             var img3 = binary(img2);
             var img4 = openingFilter(img3);
@@ -24,23 +24,6 @@ namespace Filters
 
             return img5;
 
-        }
-        public int contBlack(Bitmap img)
-        {
-
-            var imagem = (Bitmap)img.Clone();
-            int black = 0;
-
-            int j = imagem.Width / 2;
-            for (int i = 0; i < imagem.Height; i++)
-            {
-                Color c = imagem.GetPixel(i, j);
-
-                if (c.R == 0 && c.G == 0 && c.B == 0)
-                        black++;
-            }
-
-            return black;
         }
         public Bitmap grayScale(Bitmap img)
         {
@@ -63,7 +46,7 @@ namespace Filters
             Bitmap imagem = (Bitmap)img.Clone();
 
             Opening filtro = new Opening();
-            filtro.ApplyInPlace(imagem, new Rectangle(0,0,imagem.Width,imagem.Height));
+            filtro.ApplyInPlace(imagem, new Rectangle(0,0,7,7));
 
             return imagem;
         }
@@ -71,9 +54,8 @@ namespace Filters
         {
             Bitmap imagem = (Bitmap)img.Clone();
 
-            AdditiveNoise addN = new AdditiveNoise();
-            var noise = addN.Apply(imagem);
-
+            Median filter = new Median();
+            var noise = filter.Apply(imagem);
             return noise;
         }
     }
