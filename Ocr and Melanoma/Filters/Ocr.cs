@@ -51,7 +51,7 @@ namespace Filters
             Erosion3x3 e = new Erosion3x3();
             var binary = e.Apply(imagem);
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
                 binary = e.Apply(binary);
             }
@@ -65,7 +65,7 @@ namespace Filters
             Dilatation3x3 e = new Dilatation3x3();
             var binary = e.Apply(imagem);
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 8; i++)
             {
                 binary = e.Apply(binary);
             }
