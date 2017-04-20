@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filters\Melanoma.cs" />
+    <Compile Include="Filters\Ocr.cs" />
     <Compile Include="viewPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +138,7 @@
     <Content Include="Imagens\melanoma3.jpg" />
     <Content Include="Imagens\melanoma4.jpg" />
     <Content Include="Imagens\melanoma5.jpg" />
+    <Content Include="Imagens\ocr1.png" />
     <Content Include="x64\liblept172.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

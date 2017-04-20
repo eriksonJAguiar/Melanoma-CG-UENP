@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Filters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Filters;
 
 namespace Orc_and_Melanoma
 {
@@ -84,7 +84,10 @@ namespace Orc_and_Melanoma
 
         private void ocrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var img = (Bitmap)pictureBox.Image;
+            var ocr = new Ocr().ProcessOcr(img);
+            pictureBox.Image = ocr;
+            pictureBox.Refresh();
         }
 
 
