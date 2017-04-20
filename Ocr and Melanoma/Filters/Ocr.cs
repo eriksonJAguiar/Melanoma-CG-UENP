@@ -22,6 +22,7 @@ namespace Filters
             var img3 = erosion(img2);
             var img4 = dilata(img3);
             var img5 = erosion(img4);
+            Console.WriteLine(contagem(img5));
 
             return img5;
 
@@ -50,7 +51,7 @@ namespace Filters
             Erosion3x3 e = new Erosion3x3();
             var binary = e.Apply(imagem);
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 4; i++)
             {
                 binary = e.Apply(binary);
             }
@@ -64,7 +65,7 @@ namespace Filters
             Dilatation3x3 e = new Dilatation3x3();
             var binary = e.Apply(imagem);
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 2; i++)
             {
                 binary = e.Apply(binary);
             }

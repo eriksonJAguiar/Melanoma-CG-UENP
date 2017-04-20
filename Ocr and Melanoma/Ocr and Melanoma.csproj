@@ -138,7 +138,9 @@
     <Content Include="Imagens\melanoma3.jpg" />
     <Content Include="Imagens\melanoma4.jpg" />
     <Content Include="Imagens\melanoma5.jpg" />
-    <Content Include="Imagens\ocr1.png" />
+    <Content Include="Imagens\ocr1.jpg" />
+    <Content Include="Imagens\ocr2.jpg" />
+    <Content Include="Imagens\ocr3.jpg" />
     <Content Include="x64\liblept172.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
