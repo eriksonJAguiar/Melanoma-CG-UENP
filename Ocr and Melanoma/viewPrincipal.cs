@@ -82,7 +82,7 @@ namespace Orc_and_Melanoma
             return sb.ToString();
         }
 
-        private void orcToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ocrToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

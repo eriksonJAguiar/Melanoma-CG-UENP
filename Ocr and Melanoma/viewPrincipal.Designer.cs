@@ -37,7 +37,7 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filtrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.melanomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ocrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.painelPrincipal.SuspendLayout();
@@ -103,7 +103,7 @@
             // 
             this.filtrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.melanomaToolStripMenuItem,
-            this.orcToolStripMenuItem});
+            this.ocrToolStripMenuItem});
             this.filtrosToolStripMenuItem.Name = "filtrosToolStripMenuItem";
             this.filtrosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.filtrosToolStripMenuItem.Text = "Filtros";
@@ -115,12 +115,12 @@
             this.melanomaToolStripMenuItem.Text = "Melanoma";
             this.melanomaToolStripMenuItem.Click += new System.EventHandler(this.melanomaToolStripMenuItem_Click);
             // 
-            // orcToolStripMenuItem
+            // ocrToolStripMenuItem
             // 
-            this.orcToolStripMenuItem.Name = "orcToolStripMenuItem";
-            this.orcToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.orcToolStripMenuItem.Text = "Ocr";
-            this.orcToolStripMenuItem.Click += new System.EventHandler(this.orcToolStripMenuItem_Click);
+            this.ocrToolStripMenuItem.Name = "ocrToolStripMenuItem";
+            this.ocrToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ocrToolStripMenuItem.Text = "Ocr";
+            this.ocrToolStripMenuItem.Click += new System.EventHandler(this.ocrToolStripMenuItem_Click);
             // 
             // openFileDialog
             // 
@@ -155,7 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filtrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem melanomaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem orcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ocrToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
