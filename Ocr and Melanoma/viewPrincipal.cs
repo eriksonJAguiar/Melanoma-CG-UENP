@@ -1,4 +1,5 @@
 ﻿using AForge.Imaging;
+using AForge.Imaging.Filters;
 using Filters;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tesseract;
 
 namespace Orc_and_Melanoma
 {
@@ -86,10 +88,43 @@ namespace Orc_and_Melanoma
         private void ocrToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var img = (Bitmap)pictureBox.Image;
-            var ocr = new Ocr().ProcessOcr(img);
-            pictureBox.Image = ocr;
+            //var title = new Ocr().ProcessOcrTitle(img,1);
+            var texto = new Ocr().ProcessOcrTexto(img, 10);
+            pictureBox.Image = texto;
             pictureBox.Refresh();
+
+            BlobCounter bc = new BlobCounter();
+            Invert inv = new Invert();
+
+            var t = inv.Apply(texto);
+
+            bc.ProcessImage(t);
+
+            Rectangle[] r = bc.GetObjectsRectangles();
+
+            List<string> txt = new List<string>();
+
+            foreach(var rec in r)
+            {
+                var part = new Crop(rec).Apply(img);
+                var part1 = new Median().Apply(part);
+                txt.Add(new Ocr().processTess(part1));
+            }
+
+            /*var txtTitle = new Ocr().processTess(texto) + "\n\n";*/
+
+            string str = "";
+           foreach(var txtt in txt)
+            {
+                str += txtt;
+            }
+
+
+            MessageBox.Show(str, txt[0],
+            MessageBoxButtons.OK);
+
         }
+      
 
 
     }
